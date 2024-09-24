@@ -1,0 +1,20 @@
+/* CSS Demo Stylesheet */
+/* Adobecolor website for color */
+/* Goolge Fonts */
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  header.primary{
+    background-color: aqua;
+  }
+
+body {
+    background-color:rgb(243, 220, 233); 
+}
