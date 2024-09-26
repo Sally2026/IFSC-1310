@@ -1,5 +1,5 @@
 /* CSS Demo Stylesheet */
-/* Adobecolor website for color */
+/* My Color Scheme #A051F5, #F534C4, #D551F5, #6A51F5, #F5AEB8*/
 /* Goolge Fonts */
 /*  ---------------Box Sizing-----------------  */
 
@@ -12,9 +12,10 @@ html {
     box-sizing: inherit;
   }
   header.primary{
-    background-color: aqua;
+    background-color: rgb(212, 239, 239);
   }
 
 body {
-    background-color:rgb(243, 220, 233); 
+    background-color:rgb(180, 113, 151); 
+    font-family: "Oswald", sans-serif;
 }
