@@ -11,9 +11,26 @@ html {
   *:after {
     box-sizing: inherit;
   }
-  /*  ---------------Font and Color-----------------  */
+
+  /*  --------------- Resposive Images -----------------  */
+
+img{
+  max-width: 100%;
+}
+
+
+  /*  --------------- Utility Classes -----------------  */
+
+  .container{
+    width: 80vw;
+    max-width: 960px;
+    margin: 40px auto;
+  }
+
+
+  /*  ---------------Global Styles-----------------  */
 body {
-  background-color:rgb(180, 113, 151); 
+  /*background-color:rgb(180, 113, 151); */
   font-family: "Oswald", sans-serif;
   margin:0;
 }
@@ -47,7 +64,10 @@ header.primary h2{
   margin:0;
 }
 
-nav.primary{}
+nav.primary{
+  max-width: 960px;
+  margin: auto;
+}
 nav.primary ul{
   padding:10px 0 0 0;
   display: flex;
@@ -69,4 +89,56 @@ nav.primary ul li a{
 
 nav.primary ul li a:hover{
   background-color: rgba(0,0,0, .8);
+}
+
+#intro {
+  line-height: 1.6;
+}
+
+#intro h2{
+  color:#A051F5;
+  border-bottom: 1px dotted gray;
+}
+
+#content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+#content article.post{
+  box-shadow: 0 4px 8px rgba(0,0,0, .6);
+  padding: 10px;
+  border-radius: 4px;
+  font-size: .8rem;
+}
+
+time.post-date, figcaption{
+  text-transform: uppercase;
+  color: #060606;
+}
+
+#content a{
+  color: #000000;
+}
+
+#content article.post figure{
+  margin: 0;
+}
+
+/*---------- Media Queries ---------*/
+@media screen and (max-width:600px){
+
+  nav.primary ul{
+    flex-direction: column;
+    gap:10px;
+    max-width: 250px;
+    margin:10px auto;
+  }
+
+  nav.primary ul a{
+    display:block;
+  }
+
 }
