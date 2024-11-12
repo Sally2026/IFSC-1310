@@ -59,21 +59,24 @@ body {
 header.primary{
   display: flex;
   align-items: center;
-  background-color: #F2F2F2;
-  padding:20px 40px;
-}
-header.primary{
-  background-image: url("../img/Dragon-Logo.png");
-  background-size: cover;
-  position: absolute;
-  padding: 80px 40px; 
+  background-color: #6D76A6;
+  height: 100px;
+  padding:0;
 }
 
-header.primary h1{
-  font-size: 2.4rem;
-  margin:20px 0 0 0;
-  color:#000000;
+header.primary img{
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  display: block;
+
+
 }
+
+/*header.primary{
+  padding: 80px 40px; 
+}*/
+
 
 header.primary nav ul {
   position: relative;
@@ -83,6 +86,8 @@ header.primary nav ul {
   padding: 0;
   max-width: 900px;
   margin: 20px auto;
+  gap: 10px;
+
 }
 header.primary nav ul li{
   list-style-type: none;
@@ -90,9 +95,9 @@ header.primary nav ul li{
 header.primary ul li a{
   color:#6D76A6;
   text-decoration: none;
-  border: 6px solid #000000;
+  border: 4px solid #000000;
   padding: 2.5px 10px;
-  border-radius: 20px 0 10px;
+  border-radius: 10px 0 10px;
   background-color: rgba(0,0,0, .4);
   transition: .4s;
 }
@@ -107,15 +112,11 @@ section#content{
   padding:30px;
 }
 
-#content p{
-  border-bottom: 1px soild #261F22;
-}
-
-#content h1, h2{
+#content.container h1, h2{
   color:#1F2F8C;
   text-align: center;
   font-size: 2.3rem;
-  padding: 0 0;
+  border-bottom: 1px soild #261F22;
 }
 
 
@@ -126,7 +127,6 @@ section#content{
   flex-direction: row;
   justify-content: space-around;
   gap: 2rem;
-  border-top: 1px solid #261F22;
   padding: 2.3rem 0;
 }
 
@@ -141,24 +141,88 @@ section#content{
 }
 
 #articles article.post:hover{
-  box-shadow: 8px 8px 16px rgba(0,0,0, .6);
+  box-shadow: 0 8px 16px 3px rgba(0,0,0, .6);
 }
 
-#articles article.post h2{
+#articles article.post a{
   color: #F2F2F2;
   text-align: center;
-  font-size: 2em;
+  font-size: 0.6em;
 }
 
-section#articles img{
+#articles article figcaption{
+  font-size: 0.8em;
+  color:#000000;
+  text-transform: uppercase;
+}
+
+#articles .post figure {
+  margin: 0;
+}
+
+#articles article img{
   border-radius: 10px;
-  border: 6px solid #000000;
+  border: 3px solid #000000;
 }
 
-#articles article.post h2{
-  font-size: 1.9em;
-  text-shadow: none;
+#articles dl{
+  font-size: 0.8rem;
+  padding: 0px 20px;
 }
+
+#articles dt, dd{
+  margin-bottom: 20px;
+}
+
+/* ------------- Aside --------------- */
+
+aside .container{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  gap:60px;
+}
+
+aside p:last-of-type{
+  display: block;
+  margin-top: 20px;
+  text-align: right;
+}
+
+aside article img{
+  height: 200px;
+}
+
+aside article p{
+  display: block;
+  margin-top: 20px;
+  text-align: right;
+}
+/*------ Footer ------*/
+footer#colophon{
+  background-color: #2D3040;
+  padding: 0px 0px;
+  height: 80px;
+}
+
+footer#colophon img{
+  padding: 10px 0px;
+  margin:0;
+  width: 350px;
+}
+
+#colophon h6{ 
+  padding: 0;
+  margin: 0;
+  color:gray;
+  text-align: right;
+  font-size: 0.9rem;
+}
+
+/* ---------------Media Queries----------------- */
+
+
+
 
 
 
