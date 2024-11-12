@@ -82,7 +82,7 @@ header.primary nav ul {
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0;
   max-width: 900px;
   margin: 20px auto;
@@ -177,9 +177,6 @@ section#content{
 /* ------------- Aside --------------- */
 
 aside .container{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
   gap:60px;
 }
 
@@ -189,6 +186,11 @@ aside p:last-of-type{
   text-align: right;
 }
 
+article.widget{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 aside article img{
   height: 200px;
 }
