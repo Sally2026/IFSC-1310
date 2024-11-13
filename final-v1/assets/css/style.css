@@ -21,14 +21,15 @@ max-width: 100%;
 /*  --------------- Utility Classes -----------------  */
 
 .container{
-  width: 80vw;
+  width:80vw;
   max-width: 1000px;
   margin: 40px auto;
+  padding:0px auto;
 }
 
 .img-right {
   float: right;
-  margin: 10px 0 10px 20px;
+  margin: 20px auto;
   border: 1px solid gray;
   padding: 5px;
   border-radius: 50px;
@@ -36,7 +37,7 @@ max-width: 100%;
 
 .img-left {
   float: left;
-  margin: 10px 20px 10px 0;
+  margin: 20px auto;
   border: 1px solid gray;
   padding: 5px;
   border-radius: 50px;
@@ -62,24 +63,16 @@ header.primary{
   background-color: #6D76A6;
   height: 100px;
   padding:0;
+  justify-content: space-around;
 }
 
 header.primary img{
   height: 80px;
   margin: 0;
   padding: 0;
-  display: block;
-
-
 }
 
-/*header.primary{
-  padding: 80px 40px; 
-}*/
-
-
-header.primary nav ul {
-  position: relative;
+header.primary nav ul{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -87,13 +80,13 @@ header.primary nav ul {
   max-width: 900px;
   margin: 20px auto;
   gap: 10px;
-
 }
+
 header.primary nav ul li{
   list-style-type: none;
 }
 header.primary ul li a{
-  color:#6D76A6;
+  color:#1F2F8C;
   text-decoration: none;
   border: 4px solid #000000;
   padding: 2.5px 10px;
@@ -109,15 +102,18 @@ header.primary ul li a:hover{
 /* ------------- Content --------------- */
 
 section#content{
-  padding:30px;
+  padding:0px;
+  margin: auto;
 }
 
 #content.container h1, h2{
   color:#1F2F8C;
   text-align: center;
   font-size: 2.3rem;
-  border-bottom: 1px soild #261F22;
 }
+
+
+
 
 
 /* ------------- Articles --------------- */
@@ -176,30 +172,22 @@ section#content{
 
 /* ------------- Aside --------------- */
 
-aside .container{
-  gap:60px;
-}
-
-aside p:last-of-type{
-  display: block;
-  margin-top: 20px;
-  text-align: right;
-}
-
 article.widget{
   display:flex;
   flex-direction: row;
   justify-content: space-between;
 }
-aside article img{
-  height: 200px;
+
+article.widget img{
+  border-radius: 10px;
+  border: 3px solid #000000;
 }
 
-aside article p{
-  display: block;
-  margin-top: 20px;
-  text-align: right;
+div.side-text{
+  margin: 0px 10px;
 }
+
+
 /*------ Footer ------*/
 footer#colophon{
   background-color: #2D3040;
