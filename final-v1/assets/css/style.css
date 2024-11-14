@@ -112,6 +112,12 @@ section#content{
   font-size: 2.3rem;
 }
 
+section#content details{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin: auto;
+}
+
 
 /* ------------- Articles --------------- */
 
@@ -192,7 +198,6 @@ footer#colophon{
   color:gray;
   text-align:center;
   font-size: 1.2rem;
-  
 }
 
 footer#colophon img{
