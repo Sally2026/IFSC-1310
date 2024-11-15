@@ -113,9 +113,8 @@ section#content{
 }
 
 section#content details{
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin: auto;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 
@@ -168,6 +167,48 @@ section#content details{
   font-size: 0.8rem;
 }
 
+/* ------------- Table --------------- */
+
+table{
+  width:80%;
+  border:1px solid gray;
+  margin:0 auto;
+  border-collapse: collapse;
+  margin-bottom: 20px; 
+}
+
+.mission-table{
+  text-align: center;
+}
+
+caption{
+  color:#1F2F8C;
+  font-weight: bold;
+  margin: 10px;
+  font-size: 2.3rem;
+}
+   
+tr:nth-child(even){
+  background-color: rgba(0,0,0, 0.1)
+}
+  
+tr:hover{
+  background-color: rgba(0,0,0, .4);
+  padding-bottom: 20px;
+}
+  
+th{
+  background-color: #2A438C;
+  color: #000000;
+  padding: 7.5px;
+}
+
+td{
+  border:1px solid gray;
+  padding: 3.5px;
+}
+
+
 /* ------------- Aside --------------- */
 
 article.widget{
@@ -182,6 +223,9 @@ article.widget img{
 }
 
 div.side-text{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   margin: 0px 10px;
   padding: 60px 10px;
 }
@@ -219,10 +263,10 @@ footer#colophon img{
     margin: auto;
   }
   
-
   section#content{
     flex-direction: column;
   }
+
 }
 
 @media screen and (max-width:700px){
@@ -242,6 +286,10 @@ footer#colophon img{
     height: auto;
     max-width: none;
     display: block;
+  }
+
+  div.side-text{
+    flex-direction: column;
   }
 }
 
