@@ -291,7 +291,7 @@ footer#colophon img{
     max-width: none;
   } */
 
-  article.widget{
+ aside article.widget{
     flex-direction: column;
   }
 
