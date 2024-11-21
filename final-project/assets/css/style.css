@@ -285,13 +285,18 @@ footer#colophon img{
     margin-bottom: 20px;
   }
 
-  /* article.widget img{
+  article.widget img{
     width: 190px;
     height: auto;
     max-width: none;
-  } */
+    display: block;
+  } 
 
- aside article.widget{
+  div.side-text{
+    flex-direction: column;
+  }
+
+ article.widget{
     flex-direction: column;
   }
 
