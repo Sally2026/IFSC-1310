@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('.fade').slick({
+    $('.widget').slick({
       dots: true,
       infinite: true,
       speed: 500,

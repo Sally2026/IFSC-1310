@@ -211,14 +211,12 @@ td{
 
 /* ------------- Aside --------------- */
 
-article.widget{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 
 article.widget img{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   border: 3px solid #000000;
 }
@@ -228,6 +226,11 @@ div.side-text{
   padding: 60px 10px;
 }
 
+/*------ Form ------*/
+
+section.container{
+  font-family: "Oswald", sans-serif;
+}
 
 /*------ Footer ------*/
 footer#colophon{
@@ -279,21 +282,14 @@ footer#colophon img{
     margin-bottom: 20px;
   }
 
-  article.widget img{
-    width: 190px;
-    height: auto;
-    max-width: none;
-    display: block;
-  } 
-
   div.side-text{
     flex-direction: column;
   }
 
- article.widget{
-    flex-direction: column;
+  article.widget img{
+    max-width: 100%;
+    height: auto;
   }
-
 
 }
 
