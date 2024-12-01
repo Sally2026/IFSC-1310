@@ -213,10 +213,10 @@ td{
 
 
 article.widget img{
-  display: block;
+  display:block;
   margin: 0 auto;
-  max-width: 100%;
-  height: auto;
+  max-width:100%;
+  height:auto;
   border-radius: 10px;
   border: 3px solid #000000;
 }
@@ -251,6 +251,11 @@ footer#colophon img{
   width: 350px;
 }
 
+footer#colophon a{
+  color:#ffffff;
+  text-align:center;
+}
+
 
 /* ---------------Media Queries----------------- */
 
@@ -267,6 +272,7 @@ footer#colophon img{
   section#content{
     flex-direction: column;
   }
+
 
 }
 
@@ -290,6 +296,7 @@ footer#colophon img{
     max-width: 100%;
     height: auto;
   }
+
 
 }
 
