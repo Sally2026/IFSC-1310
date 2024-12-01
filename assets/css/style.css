@@ -67,3 +67,13 @@ main{
     border-bottom: 4px  double #000000;
     font-size: 2rem;
 }
+
+#progressive-enhancement nav a:hover{
+    text-decoration: underline;
+    color: #EF44A2;
+}
+
+#web-accessibility nav a:hover{
+    text-decoration: underline;
+    color: #EF44A2;
+}
